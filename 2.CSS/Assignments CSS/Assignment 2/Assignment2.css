@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    color: white;
+    text-align: center;
+    background-image: url('../Images/assignment2_1.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(141, 139, 139);
+    width: 100%;
+}
+
+img{
+    margin: 20px;
+}
+
+.btn{
+    background-color: green;
+    outline: none;
+    border: none;
+    border-radius: 10px; padding: 5px 10px;
+    color: white;
+}
+.sectionone{
+    padding: 20px 50px;
+}

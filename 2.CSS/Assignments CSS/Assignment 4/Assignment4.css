@@ -1,0 +1,62 @@
+header{
+    text-align: center;
+    background: url('../Images/assignment5_1.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+#header_of_header{
+    padding-top: 100px;
+}
+
+#section1{
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.container{
+    display: flex;
+    margin: 0px 150px;
+}
+
+.header_btn,.footer_btn{
+    background-color: rgb(103, 161, 103);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+footer h3{
+    margin-top: 50px;
+}
+
+.left{
+    text-align: left;
+    margin-right: 10px;
+}
+
+.center{
+    text-align: left;
+    margin-right: 10px;
+}
+
+.right{
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+}
+
+
+#section2{
+    padding: 50px 100px;
+    background-color: rgb(197, 197, 197);
+    text-align: center;
+}
+
+
+

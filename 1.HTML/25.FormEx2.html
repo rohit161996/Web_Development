@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Welcome to my Website .</h1>
+        <hr/>
+        <form>
+            <label for="search">Search:</label>
+            <input type="search" maxlength="100" placeholder="Your search" required/>
+            <br/><br/>
+            <label for="url">URL:</label>
+            <input type="url" maxlength="100" placeholder="Your website url" required/>
+            <br/><br/>
+            <label for="address">Address:</label>
+            <textarea rows="4" placeholder="Your Address" maxlength="200" required >Incapp greater noida</textarea>
+            <!-- <textarea rows="4" placeholder="Your Address" maxlength="200" required /> This is Wrong -->
+            <br/><br/>
+            <label for="file">File:</label>
+            <input type="file" accept=".pdf,.jpg,.png" required/>
+            <br/><br/>
+            <label for="country">Country</label>
+            <select>
+                <option>Select Country</option>
+                <option>INDIA</option>
+                <option>Japan</option>
+                <option>USA</option>
+                <option>France</option>
+                <option>China</option>
+            </select>
+            <br/><br/>
+            <label for="skill">Skills:</label>
+            <input type="checkbox" name="skill" checked /><span>Coding</span>
+            <input type="checkbox" name="skill" checked /><span>Cricket</span>
+            <input type="checkbox" name="skill" /><span>Singing</span>
+            <input type="checkbox" name="skill" /><span>Dance</span>
+            <br/><br/>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" checked /><span>Male</span>
+            <input type="radio" name="gender" /><span>Female</span>
+            <br/><br/>
+            <label for="month">Month:</label>
+            <input type="month" required />
+            <br/><br/>
+            <label for="week">Week:</label>
+            <input type="week" required />
+            <br/><br/>
+            <label for="dob">DOB & Time:</label>
+            <input type="datetime-local" required />
+            <br/><br/>
+            <label for="time">Time:</label>
+            <input type="time" required />
+            <br/><br/>
+            <label for="dob">DOB:</label>
+            <input type="date" required />
+            <br/><br/>
+            <label for="color">Color:</label>
+            <input type="color" />
+            <br/><br/>
+            <label for="range">Range:</label>
+            <input type="range" />
+            <br/><br/>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>

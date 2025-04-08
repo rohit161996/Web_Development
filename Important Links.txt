@@ -1,0 +1,41 @@
+Websites for Images:
+https://www.pexels.com
+https://www.pixabay.com
+https://www.unsplash.com
+https://www.icon-icons.com
+https://www.flaticon.com/
+https://www.freepik.com/
+
+Character entities:
+https://unicode-table.com/en/html-entities/
+https://unicode-table.com/en/sets/emoji/
+
+Font:
+https://fonts.google.com/
+https://www.dafont.com/
+
+CDN:
+https://cdnjs.com/
+
+Bootstrap:
+https://getbootstrap.com/
+
+AOS:
+https://michalsnik.github.io/aos/
+
+
+Background Animation JS:
+https://www.vantajs.com/
+
+Live Hosting:
+https://github.com
+https://tiiny.host/
+
+Web to Mobile APP:
+https://www.webintoapp.com/
+
+Text Animation:
+https://wpdean.com/javascript-text-animation/
+
+Background Animation JS:
+https://www.vantajs.com/

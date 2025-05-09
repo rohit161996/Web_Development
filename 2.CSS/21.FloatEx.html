@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+    <style>
+        /* 
+            Rule 1: Always put float elemnets inside a container element.
+            Rule 2: Always give height to that container element.
+         */
+         #container{
+            height: 40px;
+            background-color: aliceblue;
+            padding: 10px;
+         }
+
+        #p1{
+            float: left;
+        }
+        #p2{
+            float: right;
+        }
+        section{
+            height: 200px;
+            background-color: lightblue;  
+            padding: 10px;
+
+        }
+        section>img{
+            height: 200px;
+            float: left;
+        }
+        section>div{
+            float:  right;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my Page.</h1>
+    <hr />
+    <div id="container">
+        <p id="p1">
+            Hello Incapp
+        </p>
+        <p id="p2">
+            I love my INDIA
+        </p>
+    </div>
+    <p>I am Rahul Chauhan.</p>
+    <section>
+        <img src="images/car.jpg" alt="">
+        <div>
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>hello INCAPP</p>
+        </div>
+    </section>
+    <p>dfklgjdflgjdfjklg</p>
+</body>
+
+</html>

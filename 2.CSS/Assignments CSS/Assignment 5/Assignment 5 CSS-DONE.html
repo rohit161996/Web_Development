@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3 CSS</title>
+        <style>
+          body{
+            margin: 0;
+            background-image: url("https://images.pexels.com/photos/207529/pexels-photo-207529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+          }  
+          section{
+            /* text-align: center; */
+            color: white;
+            /* margin-top: 100px; */
+            /* to make this section Center of the container */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          section div{
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 -2px;
+          }
+          #d1{
+            height: 400px;
+            width: 400px;
+            overflow: hidden;
+          }
+          #d2{
+            height: 377px;
+            width: 330px;
+            text-align: left;
+            padding: 8px 40px 15px 30px;
+            background-color: rgb(39, 55, 70);
+          }
+          #d1>img{
+            height: 100%;
+            border-radius: 15px;
+          }
+          #d2 input{
+            color: white;
+            height: 40px;
+            margin: 12px 0;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgb(202, 202, 202);
+            display: block;
+            width: 100%;
+            outline: none;
+          }
+          #d2 input::placeholder{
+            color: rgb(202, 202, 202);
+          }
+          #d2 button{
+            background-color: rgb(39, 153, 218);
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: 1px solid rgb(15, 90, 134);
+          }
+          #d2 button:hover{
+            background-color: rgb(20, 107, 157);
+          }
+          #d2 a{
+            color: rgb(202, 202, 202);
+            margin-left: 20px;
+          }
+          #d2 a:hover{
+            color: white;
+          }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="d1">
+              <img src="https://images.pexels.com/photos/414551/pexels-photo-414551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            </div>
+            <div id="d2">
+                <h2>Create Account</h2>
+                <form>
+                    <input type="text" pattern="[a-zA-Z ]+" maxlength="50" placeholder="Full Name" required/>
+                    <input type="email" placeholder="Email Address" required/>
+                    <input type="tel" pattern="[0-9]+" maxlength="10" minlength="10" placeholder="Phone" required/>
+                    <input type="password" maxlength="20" minlength="6" placeholder="Password" required/>
+                    <input type="password" maxlength="20" minlength="6" placeholder="Confirm Password" required/>
+                    <button>SignUp Now</button>
+                    <a href="">I have an account</a>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

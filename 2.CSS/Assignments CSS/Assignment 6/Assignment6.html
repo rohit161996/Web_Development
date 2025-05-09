@@ -5,141 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 6</title>
-    <style>
-        body{
-            margin: 0px;
-        }
-        #header_id{
-            background-color: bisque;
-        }
-        #header_id .logo-container{
-            display: inline-block;
-            vertical-align: middle;
-        }
-        #header_id .nav-item{
-            display: inline-block;
-            vertical-align: middle;
-        }
-        #header_id button{
-            background-color: blue;
-            color: white;
-            border: none;
-            padding: 10px 30px;
-        }
-        #sec-1{
-            color: white;
-            background: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=600');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 30px 60px;
-        }
-        #sec-1>button{
-            background-color: bisque;
-            border: none;
-            padding: 10px 30px;
-        }
-        #sec-2{
-            text-align: center;
-            padding: 40px 100px;
-        }
-        #sec-2>button, #sec-4>button{
-            color: white;
-            background-color: navy;
-            border: none;
-            padding: 10px 30px;
-        }
-        #sec-3{
-            text-align: center;
-            background: url('https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600');
-            background-size: cover;
-            background-position: center;
-            padding: 60px 80px;
-            color: white;
-        }
-        #sec-4{
-            text-align: center;
-            padding: 40px 60px;
-        }
-        #sec-4_sub{
-            margin-bottom: 20px;
-        }
-        #sec-4_sub>div{
-            display: inline-block;
-            vertical-align: top;
-            width: 300px;
-            height: auto;
-        }
-        #sec-4_sub>div>p{
-            border: 5px pink solid;
-            padding: 10px;
-            margin: 20px;
-        }
-        #sec-5{
-            background-color: bisque;
-            padding: 10px 60px;
-        }
-        #sec-5>div{
-            display: inline-block;
-            vertical-align: middle;
-        }
-        #sec-5>div>button{
-            color: white;
-            background-color: navy;
-            border: none;
-            padding: 10px 30px;
-        }
-        footer{
-            color: rgb(160, 160, 160);
-            background: navy;
-            text-align: center;
-            padding: 40px 60px;
-        }
-        footer>input{
-            width: 100%;
-            background: transparent;
-            border: 2px white solid;
-            padding: 5px 1px;
-            outline: none;
-        }
-        #footer_sec>div{
-            display: inline-block;
-            vertical-align: top;
-            width: 300px;
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="Assignment6.css">
 </head>
 <body>
     <!-- NavBar -->
-    <header id="header_id">
+    <header>
         <div class="logo-container">
-            <img src="logo.jpg" alt="Logo">
-            <h1>DIVITTORIO</h1>
-            <p>ARCHITECTURE + DESIGN</p>
+            <div><img src="./logo.png" alt="Logo"></div>
+            <div>
+                <h1>DIVITTORIO</h1>
+                <p>ARCHITECTURE + DESIGN</p>
+            </div>
         </div>
-        <div class="nav-item">ABOUT</div>
-        <div class="nav-item">PORTFOLIO</div>
-        <div class="nav-item">SERVICES</div>
-        <div class="nav-item">BLOG</div>
-        <button>GET STARTED</button>
+        <div class="hyperlinks">
+            <a href="">ABOUT</a>
+            <a href="">PORTFOLIO</a>
+            <a href="">SERVICES</a>
+            <a href="">BLOG</a>
+            <button>GET STARTED</button>
+        </div>
     </header>
+
+    
     <!-- With backgound image -->
     <section id="sec-1">
         <h1>Classic.Timeless.Chic</h1>
         <p>Bringing your vision and spaces to life through architecture and design</p>
         <button>GET STARTED&#8594;</button>
     </section>
+    
+    
     <!-- Without background image -->
     <section id="sec-2">
         <h2>Our Mission</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis tempore delectus, officia animi quo nostrum eum, corrupti, sed commodi adipisci voluptate dolore id amet recusandae facere exercitationem veritatis cum numquam repellendus reiciendis iste sit. <span>Voluptas explicabo quis cum expedita totam.</span></p>
         <button>SEE THE PORTFOLIO&#8594;</button>
     </section>
+    
+    
     <!-- With background image -->
     <section id="sec-3">
         <h1>Happy Clients</h1>
     </section>
+    
+    
     <!-- Without background image -->
     <section id="sec-4">
         <section id="sec-4_sub">
@@ -154,11 +63,15 @@
         </section>
         <button>READ MORE TESTIMONIALS ON OUR FACEBOOK PAGE ></button>
     </section>
+    
+    
     <!-- Patti -->
     <section id="sec-5">
         <div><h1>Your new home awaits.</h1></div>
         <div><button>START THE PROCESS &#8594;</button></div>
     </section>
+
+    <!-- Footer Block -->
     <footer>
         <input type="text" placeholder="Search..">
         <section id="footer_sec">
@@ -167,7 +80,9 @@
                 <img src="" alt="">
                 <img src="" alt="">
             </div>
+
             <div><iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3179.9580226014045!2d77.51644770223984!3d28.489542798789824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1sen!2sin!4v1744827452587!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            
             <div>
                 <u><p>ABOUT</p></u>
                 <u><p>PORTFOLIO</p></u>
@@ -175,11 +90,13 @@
                 <u><p>BLOG</p></u>
                 <u><p>GET STARTED</p></u>
             </div>
+            
             <div>
                 <h2>CONTACT:</h2>
                 <p>408 655 0565 |</p>
                 <p>D_DIVITTORIO@YAHOO.COM</p>
             </div>
+        
         </section>
         <hr/>
         <p>TERMS AND CONDITION | branding and site design by <u>MKW GRAPHICS</u></p>

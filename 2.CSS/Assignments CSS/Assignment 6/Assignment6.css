@@ -1,0 +1,150 @@
+
+body{
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(229, 229, 229);
+    height: 100px;
+    padding: 10px;
+}
+
+.logo-container>div{
+    display: inline-block;
+}
+
+header button, #sec-2>button, #sec-4>button{
+    color: white;
+    background-color: navy;
+    border: none;
+    padding: 10px 30px;
+}
+
+.hyperlinks{
+    float: right;
+}
+
+.hyperlinks>a{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hyperlinks>a:hover{
+    color: white;
+    background-color: brown;
+}
+
+#sec-1{
+    color: white;
+    background: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px 60px;
+}
+
+#sec-1>button{
+    background-color: bisque;
+    border: none;
+    padding: 10px 30px;
+}
+
+#sec-2{
+    text-align: center;
+    padding: 40px 100px;
+}
+
+#sec-3{
+    text-align: center;
+    background: url('https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 80px;
+    color: white;
+}
+
+#sec-4{
+    text-align: center;
+    padding: 40px 60px;
+}
+
+#sec-4_sub{
+    margin-bottom: 20px;
+}
+
+#sec-4_sub>div{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: auto;
+}
+
+#sec-4_sub>div>p{
+    border: 5px pink solid;
+    padding: 10px;
+    margin: 20px;
+}
+
+#sec-5{
+    background-color: bisque;
+    padding: 10px 60px;
+}
+
+#sec-5>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#sec-5>div>button{
+    color: white;
+    background-color: navy;
+    border: none;
+    padding: 10px 30px;
+}
+
+.logo-container{
+    float: left;
+}
+
+.hyperlinks>div{
+    margin-top: 20px;
+    float: right;
+}
+
+footer{
+    color: rgb(160, 160, 160);
+    background: navy;
+    text-align: center;
+    padding: 40px 60px;
+}
+
+footer>input{
+    width: 100%;
+    background: transparent;
+    border: 2px white solid;
+    padding: 5px;
+    outline: none;
+}
+
+#footer_sec{
+    margin-top: 30px;
+}
+
+#footer_sec>div{
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: auto;
+    border-top: 2px solid gray;
+    padding: 50px 0px;
+    margin: 20px;
+}
+
+footer iframe{
+    height: 50%;
+    width: 50%;
+}
+

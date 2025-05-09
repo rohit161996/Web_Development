@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Assignment 5</title>
+    <link rel="icon" href="" />
+    <meta name="author" content="Rahul Chauhan" />
+    <meta name="keywords" content="best xyz great xyx no 1" />
+    <style>
+        @font-face {
+            font-family:HomerSimpson ;
+            src: url("resource/HomerSimpson.ttf");
+        }
+        @font-face {
+            font-family:AntiCorona ;
+            src: url("resource/AntiCorona.ttf");
+        }
+        body{
+            margin: 0;
+        }
+        nav{
+            background-color: rgb(236, 232, 229);
+            height: 40px;
+            padding: 10px;
+        }
+        #logo{
+            float: left;
+        }
+        #menu{
+            float: right;
+        }
+        #menu a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px;
+            text-transform: uppercase;
+            font-family: AntiCorona;
+        }
+        #menu a:hover{
+            background-color: brown;
+            color: white;
+        }
+        header{
+            background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(250, 235, 215, 0.3)) , url(resource/bg1.jpg);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            padding: 100px;
+        }
+        header button{
+            padding: 5px 15px;
+            background-color: rgb(250, 235, 215);
+            border: 2px solid rgb(197, 184, 167);
+        }
+        #content1{
+            text-align: center;
+            padding: 30px 80px;
+        }
+        .Blue-Button{
+            padding: 8px 18px;
+            background-color: rgb(41, 4, 110);
+            border: 2px solid rgb(22, 2, 59);
+            color: white;
+            text-transform: uppercase;
+        }
+        #content2{
+            text-align: center;
+            padding: 120px;
+            background: url(resource/bg2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        #content2 h1{
+            font-size: 200%;
+            color: white;
+        }
+        #content3{
+            padding: 50px;
+            text-align: center;
+        }
+        #content3 div{
+            display: inline-block;
+            vertical-align: top;
+            width: 300px;
+            margin: 0 30px;
+        }
+        #content3 div p{
+            border: 5px solid rgb(250, 235, 215);
+            padding: 15px;
+        }
+        #content3 div span{
+            font-size: 40px;
+            position: relative;
+            top: 50px;
+        }
+        #content4{
+            background-color: antiquewhite;
+            height: 60px;
+            padding: 20px 50px;
+        }
+        #content4 h2{
+            width: 300px;
+            float: left;
+        }
+        #content4 button{
+            float: right;
+            margin-top: 15px;
+        }
+        footer{
+            background-color: rgb(41, 4, 110);
+            padding: 60px;
+            text-align: center;
+            color: white;
+        }
+        footer input{
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border: 1.5px solid rgb(143, 143, 143);
+        }
+        footer>section{
+            text-align: center;
+            margin-top: 30px;
+        }
+        footer>section div{
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+            margin: 10px;
+            text-align: left;
+            border-top: 2px solid white;
+            padding-top: 30px;
+        }
+        footer a>img{
+            height: 30px;
+        }
+        footer iframe{
+            width: 100%;
+        }
+        footer a{
+            color: white;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: HomerSimpson;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="resource/logo.png" height="40px" alt="">
+        </div>
+        <div id="menu">
+            <a href="">Home</a>
+            <a href="">Service</a>
+            <a href="">About</a>
+            <a href="">Get Started</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Classic, Timeless, Chic</h1>
+        <p>
+            Bring your visions and spaces to life through architecture and design.
+        </p>
+        <button>Get Started &rarr;</button>
+    </header>
+    <section id="content1">
+        <h1>Our Mission</h1>
+        <p>
+            Bring your visions and spaces to life through architecture and design.
+            Bring your visions and spaces to <strong>life through architecture and design.</strong>
+        </p>
+        <button class="Blue-Button">See the Portfolio &rarr;</button>
+    </section>
+    <section id="content2">
+        <h1>Happy Clients</h1>
+    </section>
+    <section id="content3">
+        <div>
+            <span>"</span>
+            <p>
+                Bring your visions and spaces to life through architecture and design.
+                Bring your visions and spaces to life through architecture and design.
+                Bring your visions and spaces 
+            </p>
+            <h4>- Rahul Chauhan</h4>
+        </div>
+        <div>
+            <span>"</span>
+            <p>
+                Bring your visions and spaces to life through architecture and design.
+                Bring your visions and spaces 
+            </p>
+            <h4>- Praveen Chauhan</h4>
+        </div>
+        <br/><br/>
+        <button class="Blue-Button">Get Started &rarr;</button>
+    </section>
+    <section id="content4">
+        <h2>Your new home awaits.</h2>
+        <button class="Blue-Button">Get Started &rarr;</button>
+    </section>
+    <footer>
+        <form action="">
+            <input type="search" placeholder="search" required />
+        </form>
+        <section>
+            <div>
+                <h2>Get Social:</h2>
+                <a href="https://www.facebook.com/incapp" target="_blank"><img src="resource/facebook.png" /></a>
+                <a href="https://www.instagram.com/incapp.in" target="_blank"><img src="resource/instagram.png" /></a>
+                <a href="https://www.youtube.com/incapp" target="_blank"><img src="resource/youtube.png" /></a>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14028.843133516893!2d77.50692079325358!3d28.473198119690693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea7e051fd949%3A0xefccd5003c9032b6!2sINCAPP!5e0!3m2!1sen!2sin!4v1629960764264!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div>
+                <a href="">Home</a>
+                <br/>
+                <a href="">About</a>
+                <br/>
+                <a href="">Service</a>
+                <br/>
+                <a href="">Contact</a>
+            </div>
+            <div>
+                <h2>Contact:</h2>
+                <p>9811XXXXXX</p>
+                <p>5th Floor, OM Tower, Commercial Belt, Alpha 1, Greater Noida, UP, INDIA</p>
+            </div>
+        </section>
+        <hr/>
+        <p>Terms & Conditions &copy;Rights Reserved</p>
+    </footer>
+</body>
+</html>

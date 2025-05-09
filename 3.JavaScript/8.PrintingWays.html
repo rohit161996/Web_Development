@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Welcome to Page</h1>
+        <hr>
+        <p id='xyz'>This is my page</p>
+        <button onclick="f1()">Button 1</button>
+        <button onclick="f2()">Button 2</button>
+        <button onclick="f3()">Button 3</button>
+    </body>
+    <script>
+        function f1(){
+            alert("Hello Incapp!");
+            //window.alert("Hello Incapp!");  //allowed
+        }
+        function f2(){
+            //var a=document.getElementById('xyz');
+            //a.innerHTML="Hello Incapp!";
+
+            document.getElementById('xyz').innerHTML="Hello Incapp!";
+        }
+        function f3(){
+            document.write("Hello Incapp!");
+        }
+    </script>
+</html>

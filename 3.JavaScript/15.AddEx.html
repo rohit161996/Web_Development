@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Welcome to my webpage</h1>
+        <hr/>
+        <input type="number" id="num1" placeholder="Enter a number"/>
+        <br/><br/>
+
+        <input type="number" id="num2" placeholder="Enter a number"/>
+        <br/><br/>
+        
+        <button onclick="f1()">Add</button>
+        <button onclick="f2()">Subtract</button>
+        
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var a=document.getElementById("num1");
+            var v1=a.value;
+
+            var b=document.getElementById("num2");
+            var v2=b.value;
+            
+            // var sum=parseInt(v1)+parseInt(v2);
+            
+            var sum=parseFloat(v1)+parseFloat(v2);
+            
+            var p=document.getElementById("para");
+            
+            p.innerHTML="The sum is: "+sum;
+        }
+
+        function f2(){
+            var a=document.getElementById("num1");
+            var v1=a.value;
+            
+            var b=document.getElementById("num2");
+            var v2=b.value;
+            
+            // var sub=parseInt(v1)-parseInt(v2);
+            
+            var sub=parseFloat(v1)-parseFloat(v2);
+            
+            var p=document.getElementById("para");
+            p.innerHTML="The subtraction is: "+sub;
+        }
+    </script>
+</html>

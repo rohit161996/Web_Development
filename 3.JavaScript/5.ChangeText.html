@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Document is the Page of the HTML and there are 
+ several objects in the Document so it is called DOM
+ Document Object Model -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text</title>
+</head>
+
+<body>
+    <h1>Welcome to my App</h1>
+    <hr />
+
+    <p id="abc">I love my INDIA.</p>
+    <p>Hi India!</p>
+    <button onclick="f1()">Button 1</button>
+    <button onclick="f2()">Button 2</button>
+</body>
+
+<script>
+    function f1() {
+        var a = document.getElementById("abc");
+        a.innerHTML = "I am Rohit Ramchandani";
+    }
+
+    function f2() {
+        var a = document.getElementById("abc");
+        a.innerHTML = "I love my INDIA";
+    }
+</script>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3 CSS</title>
+        <style>
+          body{
+            margin: 0;
+          }
+          header{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('images/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px;
+          }
+          header>div{
+            width: 400px;
+            text-align: center;
+          }
+          header>div>h1,header>div>a{
+            color: white;
+          }
+          header>div>h3{
+            color: cyan;
+          }
+          header>div>p{
+            color: rgb(233, 233, 233);
+          }
+          header>div>a{
+            text-decoration: none;
+          }
+          header>div>hr{
+            background-color: rgb(4, 156, 156);
+            height: 5px;
+            border: none;
+            width: 100px;
+            margin-top: -5px;
+          }
+          #sec-1,#sec-2{
+            padding: 20px;
+            text-align: center;
+          }
+          #sec-1>div{
+            background-color: lightgray;
+            display: inline-block;
+            vertical-align: top;
+            width: 280px;
+            height: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: left;
+          }
+          #sec-1>div>img{
+            height: 40px;
+          }
+          #sec-1>div>a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+          }
+          #sec-2>div{
+            display: inline-block;
+            vertical-align: middle;
+            width: 400px;
+            text-align: left;
+            margin: 5px;
+          }
+          #sec-2>div>img{
+            width: 100%;
+          }
+          #sec-2 h3{
+            border-bottom: 2px solid pink;
+            width: max-content;
+          }
+          #sec-2 p{
+            color: gray;
+          }
+          footer{
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+          }
+          footer>div{
+            display: inline-block;
+            vertical-align: middle;
+            width: 200px;
+            text-align: center;
+            margin: 5px;
+          }
+          footer span{
+            font-size: 40px;
+            font-weight: bold;
+          }
+          footer p{
+            text-transform: uppercase;
+          }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Attention to detail</h1>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aspernatur ipsum quod consectetur sunt aliquid totam cupiditate dolor distinctio pariatur, et tempora harum aliquam enim necessitatibus in beatae labore ex suscipit quam cum sapiente ipsam minima odio! Tempora optio fugiat neque deleniti? Dolor quod, laboriosam architecto eum eligendi fugiat quos.
+                </p>
+                <a href="">More About Us</a>
+                <hr>
+            </div>
+        </header>
+        <section id="sec-1">
+            <div>
+                <img src="images/bulb.png" alt="">
+                <h4>Perfect Lighting Design</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit nemo quia vero repellat qui in voluptatum ipsam beatae placeat alias dolore iusto facilis non odio, quas dolorum. Deleniti voluptates ab ipsum dicta! Nulla, porro neque!
+                </p>
+                <a href="">More &#8594;</a>
+            </div>
+            <div>
+                <img src="images/electricity.png" alt="">
+                <h4>Carefully Planned Lighting</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex ea aspernatur consequatur. Ipsam tenetur vitae accusantium magnam optio tempora molestias.
+                </p>
+                <a href="">More &#8594;</a>
+            </div>
+            <div>
+                <img src="images/wifi.png" alt="">
+                <h4>Smartly Lighting Execute</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt aliquid illum at repellendus quod eum optio veritatis quis numquam voluptatem. Cupiditate, voluptatibus. Unde tenetur consequatur consequuntur sequi, iure voluptas? At illum hic neque impedit quibusdam.
+                </p>
+                <a href="">More &#8594;</a>
+            </div>
+        </section>
+        <section id="sec-2">
+            <div>
+                <img src="images/person.jpg" alt="">
+            </div>
+            <div>
+                <h3>Why did you choose us?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit perferendis sunt accusantium molestias eligendi explicabo libero aut unde molestiae?
+                </p>
+                <h3>Are you satisfied with the result?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit perferendis sunt accusantium molestias eligendi explicabo libero aut unde molestiae?
+                </p>
+                <h3>Do you recommend us to your friends?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit perferendis sunt accusantium molestias eligendi explicabo libero aut unde molestiae?
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <span>345</span>
+                <p>Happy Clients</p>
+            </div>
+            <div>
+                <span>934</span>
+                <p>Amazing Works</p>
+            </div>
+            <div>
+                <span>20+</span>
+                <p>Awards Winings</p>
+            </div>
+            <div>
+                <span>16</span>
+                <p>Opearted Years</p>
+            </div>
+        </footer>
+    </body>
+</html>

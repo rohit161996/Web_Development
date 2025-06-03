@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgb(146, 145, 145);
+        }
+        section{
+            width: 600px;
+            border: 5px, green solid;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+
+            /* Take it to the middle of the page */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #d2{
+            text-align: center;
+        }
+        #d2>div{
+            display: inline-block;
+            width: 400px;
+            margin: 10px;
+        }
+        label{
+            float: left;
+        }
+        input{
+            float: right;
+            border: none;
+            border-bottom: 2px green solid;
+            background: transparent;
+        }
+        input:focus {
+            outline: none;
+        }
+        button{
+            color: white;
+            border-radius: 5px;
+            background-color: green;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="d1">
+            <h1>Sum of the Digits between Two Numbers Assignment</h1>
+            <hr/>
+        </div>
+        <div id="d2">
+            <div>
+                <label for="">Enter the number:</label>
+                <input type="number" id="numberInput" placeholder="Enter a number">
+            </div>
+            <div>
+                <label for="">Enter the another number:</label>
+                <input type="number" id="numberInput2" placeholder="Enter another number">
+            </div>           
+            <p id="para"></p>
+            <button onclick="addNums()">Go</button>
+        </div>
+    </section>
+</body>
+<script>
+    function addNums() {
+        var num1 = parseInt(document.getElementById("numberInput").value);
+        var num2 = parseInt(document.getElementById("numberInput2").value);
+        var sum = 0;
+        for(var i=num1; i<=num2; i++){
+            sum += i;
+        }
+        document.getElementById("para").innerHTML = "The sum is: " + sum;
+    }
+</script>
+</html>

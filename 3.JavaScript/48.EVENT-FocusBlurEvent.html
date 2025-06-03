@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+        <style>
+            /* input{
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px dotted gray;
+            } */
+        </style>
+    </head>
+    <body>
+        <h1>focus Event example:</h1>
+        <input id='xyz' type="text" onfocus="f1()" onblur="f2()" />
+        <input type="text"/>
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var x=document.getElementById("para");
+            x.innerHTML="hi incapp";
+            var y=document.getElementById("xyz");
+            y.style.border="none";
+            y.style.outline="none";
+            y.style.color="red";
+            y.style.boxShadow="0px 0px 2px 2px gray";
+            y.style.backgroundColor="yellow";
+        }
+        function f2(){
+            var x=document.getElementById("para");
+            x.innerHTML="bye incapp";
+            var y=document.getElementById("xyz");
+            y.style.boxShadow="none";
+            y.style.borderBottom="1px dotted gray";
+            y.style.backgroundColor="white";
+        }
+    </script>
+</html>

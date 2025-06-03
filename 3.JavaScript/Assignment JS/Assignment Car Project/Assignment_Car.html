@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Car Project</title>
+    <style>
+        #Panel{
+            width: 500px;
+            border: 5px solid green;
+            border-radius: 5px;
+            padding: 20px 40px;
+            text-align: center;
+            background-color: lightgray;
+
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            color: white;
+            padding: 10px 20px;
+            background-color: green;
+            cursor: pointer;
+        }
+        #Action{
+            height: 400px;
+            padding: 10px;
+            margin-top: 20px;
+            padding-right: 60px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.avif");
+            background-size: cover;
+            background-position: bottom;
+        }
+        #car{
+            float: left;
+            margin-top: 160px;
+            position: absolute;
+        }
+        #tree{
+            height: 150px;
+            float: right;
+            margin-top: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Panel">
+        <h1>Car Move Project</h1>
+        <hr/>
+        <button onclick="forward()">Forward</button>
+        <button onclick="backward()">Backward</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="play()">Play</button>
+        <button onclick="pause()">Pause</button>
+    </div>
+    <div id="Action">
+        <img src="car.png" alt="" id="car">
+        <img src="tree.png" alt="" id="tree">
+    </div>
+</body>
+<script>
+    var h = window.innerWidth - 270;
+    var song = new Audio("MeraMann.mp3");
+    var car = window.document.getElementById("car");
+    var tree = window.document.getElementById("tree");
+    var posCar = 0;
+    console.log(h);
+    function forward(){
+        song.play();
+        i = setInterval(()=>{
+            if(posCar < h){
+                posCar += 10;
+            }
+            else{
+                clearInterval(i);
+                car.src = "car2.png";
+                tree.style.transform = "rotate(70deg) translate(20px, -50px)";
+                var a = new Audio("Car Accident.mp3");
+                a.play();
+                song.pause();
+            }
+            car.style.left = posCar+'px';
+        } , 100);
+    }
+    function backward(){
+        tree.style.transition = "1s";
+        clearInterval(i);
+        car.src = "car.png";
+        tree.style.transform = "rotate(0deg) translate(0px, 0px)";
+        song.play();
+        i = setInterval(()=>{
+            if(posCar > 20){
+                posCar -= 10;
+            }
+            else{
+                clearInterval(i);
+            }
+            car.style.left = posCar+'px';
+         } , 100);
+    }
+    function stop(){
+        clearInterval(i);
+    }
+    function reset(){
+        stop();
+        posCar = 10;
+        car.src = "car.png";
+        car.style.left = posCar+'px';
+        tree.style.transition = "0s";
+        tree.style.transform = "rotate(0deg) translate(0px, 0px)";
+    }
+    function play(){
+        song.play();
+    }
+    function pause(){
+        song.pause();
+    }
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Welcome to my webpage</h1>
+        <hr/>
+        <input type="number" id="num1" placeholder="Enter a number"/>
+        <br/><br/>
+        <input type="number" id="num2" placeholder="Enter a number"/>
+        <br/><br/>
+        <button onclick="f1()" >Submit</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var p=document.getElementById("para");
+            var x=parseInt(document.getElementById("num1").value);
+            var y=parseInt(document.getElementById("num2").value);
+            if(x==y){
+                p.innerHTML="Both are Equal";
+            }else{
+                if(x>y){
+                    p.innerHTML=x+" is Greater.";
+                }else{
+                    p.innerHTML=y+" is Greater.";
+                }
+            }
+        }
+    </script>
+</html>

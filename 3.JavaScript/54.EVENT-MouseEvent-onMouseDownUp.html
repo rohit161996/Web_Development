@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1 onmouseDown="f1()" onmouseup="f2()" >Mouse Event example:</h1>
+        <button >Click Me</button>
+        <p id='para'></p>
+    </body>
+</html>
+<script>
+    var x=document.getElementById('para');
+    function f1(){
+        x.innerHTML="Hello Incapp";
+    }
+    function f2(){
+        x.innerHTML="Bye Incapp";
+    }
+</script>

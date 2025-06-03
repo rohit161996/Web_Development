@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <h1>My Timer:</h1>
+    <input type="text" name="" id="tim" placeholder="Enter minutes for timer">
+    <p id="para"><span id="minutes">00</span>:<span id="seconds">00</span> minutes</p>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="resume()">Resume</button>
+    <button onclick="reset()">Reset</button>
+</body>
+<script>
+    var tim = parseInt(document.getElementById("tim").value);
+    var minutes = document.getElementById("minutes");
+    var seconds = document.getElementById("seconds");
+    function start(){
+        var i = setInterval(()=>{
+            seconds++;
+            if(seconds == 60){
+                minutes++;
+            }
+            seconds.innerHTML = seconds;
+            minutes.innerHTML = minutes;
+        },1000);
+    }
+    function reset(){
+        clearInterval(i);
+    }
+    function stop(){
+        reset();
+        seconds.innerHTML = seconds;
+        minutes.innerHTML = minutes;
+    }
+    function resume(){
+        
+    }
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Welcome to my webpage</h1>
+        <hr/>
+        <input type="number" id="num" placeholder="Enter your age"/>
+        <br/><br/>
+        <button onclick="f1()" >Submit</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var p=document.getElementById("para");
+            var n=parseInt(document.getElementById("num").value);
+            if(n<=0 || n>120){
+                p.innerHTML="Invalid Age!";
+            }else if(n<=5){
+                p.innerHTML="You are Infant.";
+            }else if(n<=12){
+                p.innerHTML="You are Kid.";
+            }else if(n<=19){
+                p.innerHTML="You are Teenager.";
+            }else if(n<=50){
+                p.innerHTML="You are Adult.";
+            }else if(n<=80){
+                p.innerHTML="You are Oldage.";
+            }else{
+                p.innerHTML="You are Very Oldage.";
+            }
+        }
+    </script>
+</html>

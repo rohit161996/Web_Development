@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Key Event example:</h1>
+        <input id="xyz" type="text" onkeyup="f1()" />
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var x=document.getElementById("xyz");
+            var p=document.getElementById("para");
+            var v=x.value;
+            p.innerHTML=v.split("").reverse().join("");
+        }
+    </script>
+</html>

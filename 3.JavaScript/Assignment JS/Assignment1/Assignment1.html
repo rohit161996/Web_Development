@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        section{
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            border: black 2px solid;
+            background-color: antiquewhite;
+            
+            /* Make section in the middle of the page */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        button{
+            background-color: aqua;
+            border: red 2px solid;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        #d1{
+            height: 60px;
+        }
+        #d1>h1{
+            float: left;
+        }
+        #d1>button{
+            float: right;
+            margin-top: 20px;
+        }
+        #d2{
+            height: 150px;
+        }        
+        #d2-1{
+            float: left;
+            width: 160px;
+        }
+        #d2-2{
+            float: right;
+            width: 160px;
+        }
+        #d2>div{
+            display: inline-block;
+            width: 150px;            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="d1">
+            <h1 id="india">This is India.</h1>
+            <button onclick="f1()">Change</button>
+        </div>
+
+        <hr/>
+        
+        <div id="d2">
+            <div id="d2-1">
+                <h1 id="d2-1-h1">This is KISHAN.</h1>
+                <button onclick="f2()">Change</button>
+            </div>
+            <div id="d2-2">
+                <h1 id="d2-2-h1">This is Incapp.</h1>
+                <button onclick="f3()">Change</button>
+            </div>    
+        </div>
+
+        <button onclick="f4()">Alert Message!</button>
+
+    </section>
+</body>
+<script>
+    var bool = true;
+    function f1(){
+        var x = document.getElementById("india");
+        if(bool){
+            x.innerHTML = "This is USA.";
+            bool = false;
+        }
+        else{
+            x.innerHTML = "This is India.";
+            bool = true;
+        }
+    }
+
+    function f2(){
+        var x = document.getElementById("d2-1-h1");
+        if(bool){
+            x.innerHTML = "This is Rahul.";
+            bool = false;
+        }
+        else{
+            x.innerHTML = "This is KISHAN.";
+            bool = true;
+        }
+    }
+
+    function f3(){
+        var x = document.getElementById("d2-2-h1");
+        if(bool){
+            x.innerHTML = "This is Developer.";
+            bool = false;
+        }
+        else{
+            x.innerHTML = "This is Incapp.";
+            bool = true;
+        }
+    }
+
+    function f4(){
+        alert("Hello Incapp");
+    }
+</script>
+</html>

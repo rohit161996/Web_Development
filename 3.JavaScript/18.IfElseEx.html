@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Welcome to my webpage</h1>
+        <hr/>
+        <input type="number" id="num" placeholder="Enter your age"/>
+        <br/><br/>
+        <button onclick="f1()" >Submit</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var p=document.getElementById("para");
+            var n=document.getElementById("num").value;
+            var x=parseInt(n);
+            if(x>=13 && x<=19){
+                p.innerHTML="You are a teenager";
+            }else{
+                p.innerHTML="You are NOT a teenager";
+            }
+        }
+    </script>
+</html>

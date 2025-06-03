@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>JS</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            section{
+                background-color: antiquewhite;
+                padding: 20px;
+                border: 2px solid black;
+                width: 350px;
+                text-align: center;
+
+                /* Make div in center of page */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .inline{
+                display: inline-block;
+                vertical-align: middle;
+                width: 170px;
+                margin: 20px 0;
+            }
+            button{
+                padding: 5px 10px;
+                background-color: cyan;
+                border: 1px solid red;
+                border-radius: 5px;
+                width: max-content !important;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div>
+                <h1 class="inline"  id="a">This is India</h1>
+                <button class="inline" onclick="f1()">Change</button>
+            </div>
+            <hr/>
+            <div>
+                <div class="inline">
+                    <h1 id="b">I am Rahul Chauhan</h1>
+                    <button onclick="f2()">Change</button>
+                </div>
+                <div class="inline">
+                    <h1 id="c">I am Developer</h1>
+                    <button onclick="f3()">Change</button>
+                </div>
+            </div>
+            <button onclick="f4()">Alert Message</button>
+        </section>
+    </body>
+    <script>
+        function f1(){
+            var x=document.getElementById("a");
+            x.innerHTML="This is USA";
+        }
+        function f2(){
+            var x=document.getElementById("b");
+            x.innerHTML="I am INCAPP";
+        }
+        function f3(){
+            var x=document.getElementById("c");
+            x.innerHTML="I am Trainer";
+        }
+        function f4(){
+            alert("Hello Incapp");
+        }
+    </script>
+</html>

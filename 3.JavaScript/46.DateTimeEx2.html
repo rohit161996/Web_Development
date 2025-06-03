@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <p id='para'></p>
+        <button onclick="f1()">click me</button>
+    </body>
+    <script>
+        function f1(){
+            var p=document.getElementById('para');
+           
+            var d=new Date();
+            var dt=d.getDate();
+            var m=d.getMonth();
+            var y=d.getFullYear();
+            var day=d.getDay();
+            var dd;
+            switch(day){
+                case 0: dd="Sunday"; break;
+                case 1: dd="Monday"; break;
+                case 2: dd="Tuesday"; break;
+                case 3: dd="Wednesday"; break;
+                case 4: dd="Thursday"; break;
+                case 5: dd="Friday"; break;
+                case 6: dd="Saturday"; break;
+            }
+            p.innerHTML=dt+"/"+(m+1)+"/"+y+" "+dd;
+            
+        }
+    </script>
+</html>

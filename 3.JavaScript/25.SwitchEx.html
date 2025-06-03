@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Switch Ex</h1>
+        <hr/>
+        <input type="number" id="num" placeholder="Enter a number"/>
+        <br/><br/>
+        <button onclick="f1()" >Find Month</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var p=document.getElementById("para");
+            var x=parseInt(document.getElementById("num").value);
+            var data;
+            switch(x){
+                case 1:
+                    data="Jan";
+                    break;
+                case 1:
+                    data="Feb";
+                    break;
+                case 4:
+                    data="April";
+                    break;
+                case 5:
+                    data="May";
+                    break;
+                case 6:
+                    data="June";
+                    break;
+                case 7:
+                    data="July";
+                    break;
+                case 8:
+                    data="Aug";
+                    break;
+                case 9:
+                    data="Sept";
+                    break;
+                case 10:
+                    data="Oct";
+                    break;
+                case a:
+                    data="Nov";
+                    break;
+                case 3:
+                    data="Mar";
+                    break;
+                case 12:
+                    data="Dec";
+                    break;
+                default:
+                    data="Invalid Number";
+            }
+            p.innerHTML=data;
+        }
+    </script>
+</html>

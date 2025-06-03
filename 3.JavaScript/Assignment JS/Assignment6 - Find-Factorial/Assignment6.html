@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Find Factorial!</h1>
+        <hr/>
+        <input type="number" id="num" placeholder="Enter a number"/>
+        <br/><br/>
+        <button onclick="f1()" >Find</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var p=document.getElementById("para");
+            var x=parseInt(document.getElementById("num").value);
+            var fact=1;
+            for(var i=1;i<=x;i++){
+                fact *= i;
+            }
+            p.innerHTML="Factorial of "+x+" = "+fact;
+        }
+    </script>
+</html>

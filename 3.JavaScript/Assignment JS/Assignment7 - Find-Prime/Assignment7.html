@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+</head>
+<body>
+    <h1>Prime No.</h1>
+    <hr>
+    <label for="">Enter a Number</label>
+    <input type="number" id = "num" min="2" required/>
+    <button onclick="f()">Find Prime</button>
+    <p id="para"></p>
+</body>
+<script>
+    function f(){
+        var n = parseInt(document.getElementById("num").value);
+        var p = document.getElementById("para");
+        var flag = true;
+        for(var x=2; x<n; x++){
+            if(n%x == 0){
+                flag = false;
+                break;
+            }
+        }
+        if(flag == true){
+            p.innerHTML = n + " is a Prime No.";
+        }
+        else{
+            p.innerHTML = n + " is not a Prime No.";
+        }
+    }
+</script>
+</html>

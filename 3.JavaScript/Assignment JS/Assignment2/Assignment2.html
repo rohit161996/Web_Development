@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: gray;
+        }
+        section{
+            width: 500px;
+            border: #4CAF50 solid 5px;
+            border-radius: 5px;
+            background-color: rgb(240, 240, 240);
+
+            /* Align the section to the center of the page */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        h1{
+            text-align: center;
+            color: #4CAF50;
+        }
+        button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        input{
+            border-radius: 5px;
+            padding: 5px;
+        }
+        #d2{
+            text-align: center;
+        }
+        #d2>div{
+            display: inline-block;
+            width: 300px;
+        }
+        label{
+            float: left;
+        }
+        input{
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="d1">
+            <h1>Simple Interest App</h1>
+        </div>
+        <hr/>
+        <div id="d2">
+            <div>
+                <label for="">Enter the Time:</label>
+                <input type="number" id="time" placeholder="Enter the Time in years" />
+            </div>
+            <div>
+                <label for="">Enter the Rate:</label>
+                <input type="number" id="rate" placeholder="Enter the Rate of Interest" />
+            </div>
+            <div>
+                <label for="">Enter the Princple:</label>
+                <input type="number" id="principal" placeholder="Enter the Principle amount" />
+            </div>
+                <p id="answer"></p>
+                <button onclick="calcSI()">Find SI</button>
+        </div>
+    </section>
+</body>
+<script>
+    function calcSI() {
+        var p = parseInt(document.getElementById("principal").value);
+        var r = parseInt(document.getElementById("rate").value);
+        var t = parseInt(document.getElementById("time").value);
+        var si = (p * r * t) / 100;
+        var answer = document.getElementById("answer");
+        answer.innerHTML = "The Simple Interest is: " + si;
+    }
+</script>
+</html>

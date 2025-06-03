@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+        <style>
+            p{
+                background-color: blue;
+                color: white;
+                width: max-content;
+                padding: 20px;
+                transition: 2s;
+            }
+            .xyz{
+                background-color: red;
+                font-size: 25px;
+                font-family: monospace;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id='h1'>Change css example:</h1>
+        <p id='para'>I love my INDIA</p>
+        <img id="image" height="100px" src="https://images.pexels.com/photos/31962880/pexels-photo-31962880/free-photo-of-vibrant-autumn-leaves-in-golden-sunlight.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        <br><br>
+        <a id="link" href="http://www.google.com">Click ME</a>
+        <br><br>
+        <div>
+            <button onclick="f1()">click me 1</button>
+            <button onclick="f2()">click me 2</button>
+            <button onclick="f3()">click me 3</button>
+            <button onclick="f4()">click me 4</button>
+        </div>
+    </body>
+    <script>
+        function f1(){
+            var p=document.getElementById("para");
+            // p.style.backgroundColor="yellow";
+            p.style.backgroundImage="url('https://www.w3schools.com/w3images/lights.jpg')";
+            p.style.backgroundSize="cover";
+            p.style.backgroundRepeat="no-repeat";
+            p.style.backgroundPosition="center";
+            p.style.color="black";
+            p.style.fontSize="30px";
+            p.style.fontFamily="cursive"; 
+            p.style.padding="100px"; 
+             
+        }
+        function f2(){
+            var p=document.getElementById("para");
+            p.className="xyz";
+        }
+        function f3(){
+            var i=document.getElementById("image");
+            i.src="https://images.pexels.com/photos/2183508/pexels-photo-2183508.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        }
+        function f4(){
+            var l=document.getElementById("link");
+            l.href="https://www.incapp.in";
+        }
+    </script>
+</html>

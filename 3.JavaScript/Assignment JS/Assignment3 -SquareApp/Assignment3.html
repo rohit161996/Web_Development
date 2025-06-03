@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: rgb(201, 196, 196);
+        }
+        section{
+            width: 400px;
+            border: green solid 5px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            background-color: rgb(226, 226, 217);
+            
+            /* Add this line for shadow */
+            box-shadow: 10px 10px 10px 10px rgba(2, 0, 0, 0.3);
+
+            /* Take section to the center of the page */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        button{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="d1">
+            <h1>Square App</h1>
+        </div>
+        <hr/>
+        <div id="d2">
+            <label for="">Enter the number</label>
+            <input type="number" id="num1" placeholder="Enter a number">
+            <button onclick="f1()">Find Square</button>
+            <p id="ans"></p>
+        </div>
+    </section>
+</body>
+<script>
+    function f1(){
+        var num1 = parseInt(document.getElementById("num1").value);
+        var result = num1 * num1;
+        document.getElementById("ans").innerHTML = result;
+    }
+</script>
+</html>

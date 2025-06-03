@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Bounce</title>
+    <style>
+        section {
+            width: 300px;
+            padding: 10px 20px;
+            border: 2px solid green;
+            margin-bottom: 10px;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0px 10px;
+        }
+
+        #ball {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <h1>Ball Move Project:</h1>
+            <hr />
+        </div>
+        <div>
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+    </section>
+    <img src="ball.gif" alt="" width="50px" height="50px" id="ball">
+</body>
+<script>
+    var ball = document.getElementById("ball");
+    var posX = 0;
+    var posY = 0;
+    var h = window.innerHeight - 160;
+    var interval;
+    var moveToLeft = true;
+    var moveToBottom = true;
+    function start() {
+        interval = setInterval(() => {
+            // Move the ball towards left
+            if(moveToLeft){
+                posX++;
+            }
+            else if(posX > 0){
+                posX--;
+            }
+            else{
+                moveToLeft = true;
+            }
+
+            // Move the ball towards bottom
+            if(posY < h && moveToBottom){ // Ball has not reached the bottom
+                posY++;
+            }
+            else if(posY > 0){ // Take the Ball Up 
+                // make the flag moveToBottom = false, else (0 < posY < h), 
+                // so if condition will be true.
+                moveToBottom = false;
+                posY--;
+            }
+            else{ // Ball has reached the same level
+                moveToLeft = false;
+                moveToBottom = true;
+            }
+            
+
+            ball.style.left = posX + 'px';
+            ball.style.top = posY + 'px';
+        }, 1);
+    }
+
+
+    function stop(){
+        clearInterval(interval);
+    }
+
+    function reset() {
+        stop();
+
+        posX = posY = 0;
+        
+        ball.style.left = posX + 'px';
+        ball.style.top = posY + 'px';
+    }
+</script>
+
+</html>

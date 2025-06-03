@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time view</title>
+    </head>
+    <body >
+        <h1>Digital Clock:</h1>
+        <p id='para'></p>
+    </body>
+    <script>
+        var p=document.getElementById("para");
+        clock();
+        
+        setInterval(clock, 1000);
+       
+        function clock(){
+            var d=new Date();
+            var h=d.getHours();
+            var m=d.getMinutes();
+            var s=d.getSeconds();
+            var a="AM";
+            if(h>=12){
+                a="PM";
+                if(h>12){
+                    h-=12;
+                }
+            }
+            if(h<10){
+                h='0'+h;
+            }
+            if(m<10){
+                m='0'+m;
+            }
+            if(s<10){
+                s='0'+s;
+            }
+
+            p.innerHTML=h+":"+m+":"+s+" "+a;
+        }
+    </script>
+</html>

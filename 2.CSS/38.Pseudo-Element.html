@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Page</title>
+    <style>
+        h2::before {
+            content: "*";
+        }
+        h2::after {
+            content: "%";
+        }
+        p::first-letter {
+            font-size: 200%;
+            color: red;
+        }
+        ::selection {
+            background-color: gold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hello World</h2>
+    <p>This is a paragraph to test pseudo-elements. Try
+        selecting some text.</p>
+</body>
+
+</html>

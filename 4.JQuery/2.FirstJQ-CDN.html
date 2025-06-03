@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JQ Ex</title>
+</head>
+
+<body>
+    <h1>Welcome to my Page.</h1>
+    <hr />
+    <button id="b1" onclick="f()">Click</button>
+    <div id="xyz">
+        <h2>Hello INCAPP</h2>
+        <p>This is Rahul Chauhan.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quae.</p>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    // jquery:
+    // The code will run only after the HTML code is loaded and fully parsed.
+    // useEffect() does this task in react.
+    // It is used beacuse the DOM Selection, click handlers will give errors, because the elements won't
+    // exist yet.
+    $(document).ready(function () {
+        // On button click function will be called.
+        $("#b1").click(
+            function () {
+                // On button click the div with id = "xyz" will appear and disppear.
+                $("#xyz").toggle();
+            }
+        );
+    }
+    );
+
+    // javascript:
+
+    // var flag=true;
+    // function f(){
+    //     if(flag){
+    //         var a=document.getElementById("xyz");
+    //         a.style.display="none";
+    //         flag=false;
+    //     }
+    //     else{
+    //         var a=document.getElementById("xyz");
+    //         a.style.display="block";
+    //         flag=true;
+    //     }
+    // }
+</script>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+
+    <!-- Content Delivery Network to add JQuery in the page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Content Delivery Network to add Animation in the page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+
+    <style>
+        button {
+            color: white;
+            border: none;
+            background-color: green;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #pane-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #pane-2 {
+            margin: 40px 40px 0px 60px;
+        }
+
+        #img-4 {
+            position: relative;
+            z-index: 1;
+        }
+
+        #btn-4 {
+            position: relative;
+            z-index: 2;
+            /* Higher than image */
+
+            margin: 10px 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pane-1">
+        <div>
+            <img src="https://images.pexels.com/photos/31984951/pexels-photo-31984951/free-photo-of-view-of-galata-bridge-and-istanbul-skyline-at-daytime.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="" height="200px" width="200px" id="img-1"><br>
+            <button id="btn-1">Fade</button>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/30124808/pexels-photo-30124808/free-photo-of-gothic-revival-church-in-novi-sad-serbia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="" height="200px" width="200px" id="img-2"><br>
+            <button id="btn-2">Remove</button>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/32195341/pexels-photo-32195341/free-photo-of-romantic-couple-holding-hands-by-the-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="" height="200px" width="200px" id="img-3"><br>
+            <button id="btn-3">Slide</button>
+        </div>
+    </div>
+    <div id="pane-2">
+        <img src="https://images.pexels.com/photos/18184400/pexels-photo-18184400/free-photo-of-dancer-balancing-by-modern-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="" height="200px" width="200px" id="img-4">
+    </div>
+    <button id="btn-4">Animate</button>
+</body>
+
+<script>
+    let fadeChange = false;
+    let remChange = false;
+    let animateChange = false;
+
+    // When the button 1 is clicked
+    $("#btn-1").click(() => {
+        if (!fadeChange) {
+            // Image fades out
+            $("#img-1").fadeOut(2000);
+            fadeChange = true;
+        }
+        else {
+            // Image fades out
+            $("#img-1").fadeIn(2000);
+            fadeChange = false;
+        }
+    });
+
+    // When the button 1 is double clicked
+    $("#btn-1").dblclick(() => {
+        // Image fades in a.k.a. comes back
+        $("#img-1").fadeIn(2000);
+    });
+
+    // When button 2 is clicked
+    $("#btn-2").click(function () {
+        if (!remChange) {
+            // Image is removed
+            $("#img-2").attr("src", "");
+            remChange = true;
+        } else {
+            $("#img-2").attr("src", "https://images.pexels.com/photos/30124808/pexels-photo-30124808/free-photo-of-gothic-revival-church-in-novi-sad-serbia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            remChange = false;
+        }
+    });
+
+    // When button 3 is clicked
+    $("#btn-3").click(function () {
+        // Image slides
+        // $("#img-3").slideUp(2000);
+        $("#img-3").slideToggle(2000);
+    });
+
+    // When button 4 is clicked image traverses to right
+    $("#btn-4").click(function () {
+        if (!animateChange) {
+            $("#img-4").animate({
+                left: '700px',
+            }, 2000);
+            animateChange = true;
+        }
+        else {
+            $("#img-4").animate({
+                left: '-700px',
+            }, 2000);
+            animateChange = false;
+        }
+    });
+
+</script>
+
+</html>

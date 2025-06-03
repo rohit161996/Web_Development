@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQ Ex</title>
+        <style>
+            section{
+                width: 400px;
+                border: 5px solid green;
+                border-radius: 5px;
+                background-color: lightgray;
+                padding: 20px 40px;
+
+                /* Take section to the middle of the page */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            input{
+                float: right;
+                border-radius: 5px;
+            }
+            label{
+                float: left;
+            }
+            button{
+                border: none;
+                padding: 10px 20px;
+                margin: 10px;
+                color: white;
+                background-color: green;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Welcome to my Page.</h1>
+            <hr/>
+            <label for="">Enter First Number:</label>
+            <input type="number" class="num1" placeholder="Enter a number"/>
+            <br/><br/>
+            <label for="">Enter the Second Number:</label>
+            <input type="number" id="num2" placeholder="Enter a number"/>
+            <br/><br/>
+            <button id="b1">Add</button>
+            <button id="b2">Sub</button>
+            <p id='para'></p>
+        </section>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#b1").click(function(){
+            var n1=parseInt($(".num1").val());
+            var n2=parseInt($("#num2").val());
+            var r=n1+n2;
+            $("#para").text("Ans: "+r);
+        });
+        $("#b2").click(function(){
+            var n1=parseInt($(".num1").val());
+            var n2=parseInt($("#num2").val());
+            var r=n1-n2;
+            $("#para").text("Ans: "+r);
+        });
+    </script>
+</html>

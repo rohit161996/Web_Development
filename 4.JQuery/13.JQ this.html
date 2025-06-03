@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS ex</title>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+    <p>Hello world.</p>
+    <p>hi incapp</p>
+    <h2>Welcome to my website</h2>
+    <p>Ok INCAPP</p>
+</body>
+
+<!-- Load jQuery library from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    // When any <p> or <h1> element is clicked
+    $("p,h1").click(function() {
+        // After 2 seconds (2000ms), hide the clicked element
+        setTimeout(() => {
+            $(this).hide();
+        }, 2000);
+    });
+
+    // When <h2> is double-clicked
+    $("h2").dblclick(function() {
+        // Show all <p> and <h1> elements again
+        $("p,h1").show();
+    });
+</script>
+</html>

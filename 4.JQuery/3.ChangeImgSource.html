@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ex</title>
+    <!-- Content Delivery Network Script Added for JQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+    <style>
+        button {
+            color: white;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my website</h1>
+    <button id="b">Change Image</button>
+    <br><br>
+    <img id="i" src="https://cdn.pixabay.com/photo/2024/03/03/20/44/cat-8611246_1280.jpg" height="200px" alt="">
+</body>
+<script>
+    // When the element with id 'b' is clicked
+    $("#b").click(function () {
+        // Set the 'src' attribute of the image with ID 'i'
+        // This will change the image to a new kitten image
+        $("#i").attr("src", "https://cdn.pixabay.com/photo/2019/11/08/11/56/kitten-4611189_1280.jpg");
+
+        // Set the 'height' attribute of the image with ID 'i' to 300px
+        $("#i").attr("height", "300px");
+    });
+</script>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ex</title> <!-- Page title -->
+</head>
+
+<body>
+    <!-- Main heading -->
+    <h1 id='h1'>Welcome to my website</h1>
+
+    <!-- A simple form with two input fields -->
+    <form action=''>
+        <label>First Name:</label>
+        <input type='text' name='fname' /> <!-- Input for first name -->
+        <label>Last Name:</label>
+        <input type='text' name='lname' /> <!-- Input for last name -->
+        <button>GO</button> <!-- Submit button -->
+    </form>
+</body>
+
+<!-- Importing jQuery library from CDN -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+
+<script>
+    // When any input field gets focus (clicked into)
+    $("input").focus(function () {
+        $(this).css({
+            "background-color": "yellow", // Set background to yellow
+            "height": "50px" // Increase height to 50px
+        });
+    });
+
+    // When any input field loses focus (clicked out of)
+    $("input").blur(function () {
+        $(this).css({
+            "background-color": "green", // Change background to green
+            "height": "20px" // Reduce height to 20px
+        });
+    });
+</script>
+
+</html>

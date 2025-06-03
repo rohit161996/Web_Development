@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQ Ex</title>
+    </head>
+    <body>
+        <h1>Welcome to my Page.</h1>
+        <hr/>
+        <input type="number" id="num" placeholder="Enter a number"/>
+        <br/><br/>
+        <button id="b1">Find Even ODD</button>
+        <p id='para'></p>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#b1").click(function(){
+            var n=parseInt($("#num").val());
+            if(n%2==0){
+                $("#para").text(n+" is Even");
+            }else{
+                $("#para").text(n+" is Odd");
+            }
+        });
+    </script>
+</html>

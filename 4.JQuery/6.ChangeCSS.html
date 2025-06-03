@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQ Ex</title>
+        <style>
+            .abc{
+                color: red;
+                background-color: yellow;
+                padding: 20px;
+            }
+            section{
+                width: 400px;
+                border: 5px solid green;
+                border-radius: 5px;
+                background-color: lightgray;
+                padding: 20px 40px;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            input{
+                float: right;
+                border-radius: 5px;
+            }
+            label{
+                float: left;
+            }
+            button{
+                border: none;
+                padding: 10px 20px;
+                margin: 10px;
+                color: white;
+                background-color: green;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <section>            
+            <h1>Welcome to my Page.</h1>
+            <hr/>
+            <h2>Hello INCAPP</h2>
+            <p id="para">This is Rahul Chauhan.</p>
+            <button id="b1">Click</button>
+        </section>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#b1").click(function(){
+            // $("h2").css("color","red");
+            // $("h2").css("background-color","yellow");
+            // $("h2").css("padding","20px");
+            
+            //or
+
+            // $("h2").css({"color":"red","background-color":"yellow","padding":"20px"});
+
+            //or
+
+            $("h2").addClass("abc");
+        });
+    </script>
+</html>

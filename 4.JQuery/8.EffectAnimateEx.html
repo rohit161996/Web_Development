@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Ex</title>
+	<style>
+		#xyz{
+			padding: 20px;
+			background-color:lightseagreen;
+			color:white;
+			width:200px;
+			height:200px;
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+	<h1>My Jquery</h1>
+	<button id='b1'>Animate 1</button>
+	<button id='b2'>Animate 2</button>
+	<div id='xyz'>
+		<p>I am Learning JQUERY</p>
+		<p>Hello INCAPP</p>
+		<p>I Love my INDIA</p>
+	</div>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
+<script>
+	$("#b1").click(function(){
+		$("#xyz").animate({
+			left:'250px',
+			top:'100px',
+			fontSize:'20px',
+			height: '300px',
+			width: '300px',
+			backgroundColor:'yellow',
+			color:'black',
+			borderRadius: '50%',
+            padding: '10px',
+		},2000); 	//allowed
+		
+		// },"fast"); 	//allowed
+		// },"slow"); 		//allowed
+	});
+	$("#b2").click(function(){
+		$("#xyz").animate({
+			left:'0px',
+			top:'0px',
+			fontSize:'14px',
+			padding: '20px',
+			backgroundColor:'red',
+			color:'white',
+			height: '200px',
+			width: '200px',
+		},2000); 	//allowed
+		
+		// },"fast"); 	//allowed
+		// },"slow"); 		//allowed
+	});
+</script>
+</html>

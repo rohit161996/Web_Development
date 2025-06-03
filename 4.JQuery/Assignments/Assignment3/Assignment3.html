@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <!-- Content Delivery Network to add JQuery in the page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        button {
+            color: white;
+            border: none;
+            background-color: green;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #para{
+            
+            width: 200px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para" style="height: 100px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum optio veritatis fuga excepturi vitae
+        quos,
+        reprehenderit similique repellat eaque sit unde consequatur molestiae ratione hic necessitatibus quis tenetur
+        minus! Temporibus, tempora et repellendus delectus neque alias eos excepturi animi sit quo corporis architecto
+        porro pariatur veritatis ullam placeat illum quae error enim minima, vel voluptas maiores necessitatibus.
+        Asperiores amet itaque libero aut neque perspiciatis cumque magni, officia praesentium minus quam dolor velit
+        debitis? Molestiae iusto ea sed modi, nobis perferendis cumque, eum recusandae velit ipsam reprehenderit in.
+        Libero expedita omnis magnam aliquam nesciunt maiores eaque porro tenetur. Nobis, enim tempora ipsum incidunt
+        officiis dolorum facere? Veritatis, excepturi natus consequuntur quibusdam illum ab maiores ipsam. Enim voluptas
+        tenetur itaque velit officiis eos autem cum debitis cupiditate vel fuga, ea rem perferendis. Nulla, incidunt eum
+        deserunt similique repellat, eligendi iste quisquam eos nihil quibusdam itaque! Dolorum officiis veritatis
+        praesentium quo quia. Tempore corrupti molestiae fuga aperiam nesciunt animi culpa magnam nemo saepe voluptatum
+        asperiores esse, earum hic dolorem architecto necessitatibus impedit voluptatibus. Quibusdam dignissimos
+        consequuntur expedita officia molestias modi hic magni voluptatum illo vel voluptates corporis, explicabo, eaque
+        nulla quasi aspernatur nostrum iure laborum sed illum perspiciatis in alias eligendi accusamus. Amet.</p><br>
+    <button id="btn-1">Increase height</button>
+</body>
+
+<script>
+    $("#btn-1").click(() => {
+        $("#para").css("height", "400px");
+    })
+</script>
+
+</html>

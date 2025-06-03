@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+        <style>
+            .demo{
+                background-color: aqua;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class='demo'>
+            <p>Hello world.</p>
+            <h2>hi incapp</h2>
+        </div>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+    </body>
+    <script>
+        $(".demo").click(function(){
+            $(".demo>h2").hide();
+        });
+        $(".demo>p").dblclick(function(){
+            $(".demo>h2").show();
+        });
+    </script>
+</html>

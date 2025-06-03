@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <button id="b1">Slide UP</button>
+        <button id="b2">Slide DOWN</button>
+        <button id="b3">Slide TOGGLE</button>
+        <div id="dd">
+            <h2>Hello INCAPP</h2>
+            <p>Hi India</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, veritatis?</p>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $("#b1").click(function(){
+                $("#dd").slideUp(2000);
+            }
+        );
+        $("#b2").click(function(){
+                $("#dd").slideDown(2000);
+            }
+        );
+        $("#b3").click(function(){
+                $("#dd").slideToggle(2000);
+            }
+        );
+    </script>
+</html>

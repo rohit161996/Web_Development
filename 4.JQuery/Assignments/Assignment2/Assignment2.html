@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <!-- Content Delivery Network to add JQuery in the page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        button {
+            color: white;
+            border: none;
+            background-color: green;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://images.pexels.com/photos/31701219/pexels-photo-31701219/free-photo-of-confident-young-man-in-white-shirt-indoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="" id="img-1" height="300px" width="300px"><br>
+    <button id="btn-1">Change Image</button>
+</body>
+
+<script>
+    let toggle = false;
+    $("#btn-1").click(() => {
+        if (!toggle) {
+            $("#img-1").attr("src", "https://images.pexels.com/photos/32193106/pexels-photo-32193106/free-photo-of-cozy-cafe-setting-with-blueberry-tart-and-coffee.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            toggle = true;
+        } else {
+            $("#img-1").attr("src", "https://images.pexels.com/photos/31701219/pexels-photo-31701219/free-photo-of-confident-young-man-in-white-shirt-indoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            toggle = false;
+        }
+    })
+</script>
+
+</html>

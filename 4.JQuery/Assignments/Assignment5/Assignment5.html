@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <!-- Content Delivery Network to add JQuery in the page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <iframe src="https://www.w3schools.com/html/mov_bbb.mp4" id="vid"></iframe>
+</body>
+
+<script>
+    // On hovering to the video
+    $("#vid").hover({
+        // Play the video
+        function() {
+            this.play();
+        },
+        function() {
+            this.pause();
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ex</title>
+</head>
+
+<body>
+    <h1>Welcome to my website</h1>
+    <p>I am rahul.</p>
+    <h1>I love my INDIA</h1>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $("h1").mouseenter(function () {
+        $(this).css({
+            "font-weight": "normal",
+            "color": "red"
+        });
+    });
+    $("h1").mouseleave(function () {
+        $(this).css({
+            "font-weight": "bold",
+            "color": "blue"
+        });
+    });
+</script>
+
+</html>

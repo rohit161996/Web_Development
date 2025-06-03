@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS ex</title>
+    <style>
+        h1 {
+            transition: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to my website</h1>
+    <p>I am rahul.</p>
+    <h1>I love my INDIA</h1>
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script>
+    $("h1").hover(
+        function () {
+            $(this).css({
+                "background-color": "yellow",
+                "font-size": "40px",
+                "color": "red"
+            });
+        },
+        function () {
+            $(this).css({
+                "background-color": "gray",
+                "font-size": "30px",
+                "color": "blue"
+            });
+        }
+    );
+</script>
+
+</html>
